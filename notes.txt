@@ -1,0 +1,44 @@
+Introductions
+
+What is Spring Security
+
+New in Spring Security 3.2 (15 min)
+
+Tour insecure application
+
+Spring Boot (total 18 min)
+
+Hello Java Configuration (24 min)
+
+Custom Log In Form (32 min)
+
+JDBC Authentication (36 min)
+
+Custom Authentication (44 min)
+
+Spring Security / Spring Data (49 min)
+
+Method Security (53 min)
+
+Password Storage (58 min)
+- talk about what hash is, history of real hashes, migration strategies
+
+CSRF (107 min)
+
+Clickjacking (112 min)
+
+Security HTTP Response Headers (120 min)
+
+Concurrency (125 min)
+
+Servlet 3 / 3.1 (126 min)
+
+Spring MVC Async
+
+Testing (132 min)
+
+Spring Security 4 - WebSocket, Session
+
+
+Make query correct
+Make Username to firstname

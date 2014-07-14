@@ -1,0 +1,247 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Test results - Class samples.SecurityTests</title>
+<link href="css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+<script src="js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class samples.SecurityTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/samples.html">samples</a> &gt; SecurityTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">9</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">7.135s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">compose</td>
+<td>0.083s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">composeRequiresCsrf</td>
+<td>0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">inboxRequiresLogin</td>
+<td>0.010s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">inboxShowsOnlyRobsMessages</td>
+<td>6.903s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">invalidUsernamePassword</td>
+<td>0.043s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">lukeCanAccessLukesMessage</td>
+<td>0.033s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">robCanAccessOwnMessage</td>
+<td>0.019s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">robCannotAccessLukesMessage</td>
+<td>0.009s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">validUsernamePassword</td>
+<td>0.029s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>17:17:28.149 [Test worker] DEBUG o.s.t.c.j.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class samples.SecurityTests].
+17:17:28.189 [Test worker] DEBUG o.s.test.context.ContextLoaderUtils - Found explicit ContextLoader class [org.springframework.boot.test.SpringApplicationContextLoader] for context configuration attributes [ContextConfigurationAttributes@57de2a8 declaringClass = 'samples.SecurityTests', locations = '{}', classes = '{class sample.Application}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.boot.test.SpringApplicationContextLoader']
+17:17:28.194 [Test worker] DEBUG o.s.test.context.ContextLoaderUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [samples.SecurityTests]
+17:17:28.210 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [samples.SecurityTests]
+17:17:28.210 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [samples.SecurityTests]
+17:17:28.213 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [samples.SecurityTests]
+17:17:28.213 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [samples.SecurityTests]
+17:17:28.214 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [samples.SecurityTests]
+17:17:28.214 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [samples.SecurityTests]
+17:17:28.217 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [samples.SecurityTests]
+17:17:28.218 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [samples.SecurityTests]
+17:17:28.294 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+17:17:28.295 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+17:17:28.296 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+17:17:28.298 [Test worker] DEBUG o.s.w.c.s.StandardServletEnvironment - Adding [servletConfigInitParams] PropertySource with lowest search precedence
+17:17:28.298 [Test worker] DEBUG o.s.w.c.s.StandardServletEnvironment - Adding [servletContextInitParams] PropertySource with lowest search precedence
+17:17:28.302 [Test worker] DEBUG o.s.w.c.s.StandardServletEnvironment - Adding [jndiProperties] PropertySource with lowest search precedence
+17:17:28.302 [Test worker] DEBUG o.s.w.c.s.StandardServletEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+17:17:28.302 [Test worker] DEBUG o.s.w.c.s.StandardServletEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+17:17:28.302 [Test worker] DEBUG o.s.w.c.s.StandardServletEnvironment - Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+17:17:28.303 [Test worker] DEBUG o.s.w.c.s.StandardServletEnvironment - Adding [integrationTest] PropertySource with search precedence immediately lower than [systemEnvironment]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.1.4.RELEASE)
+
+2014-07-11 17:17:28.648  INFO 59718 --- [    Test worker] o.s.boot.SpringApplication               : Starting application on rwinch with PID 59718 (/Users/rwinch/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/1.1.4.RELEASE/338574f840409cb91adbbb4adb7b7f458c213ce0/spring-boot-1.1.4.RELEASE.jar started by rwinch in /Users/rwinch/code/spring-security-cjug)
+2014-07-11 17:17:28.711  INFO 59718 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@6c45e3b9: startup date [Fri Jul 11 17:17:28 CDT 2014]; root of context hierarchy
+2014-07-11 17:17:29.429  INFO 59718 --- [    Test worker] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'beanNameViewResolver': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2014-07-11 17:17:30.219  INFO 59718 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$34bca0c1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2014-07-11 17:17:30.238  INFO 59718 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'transactionAttributeSource' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2014-07-11 17:17:30.246  INFO 59718 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'transactionInterceptor' of type [class org.springframework.transaction.interceptor.TransactionInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2014-07-11 17:17:30.251  INFO 59718 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2014-07-11 17:17:30.271  INFO 59718 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [class org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$2579f7b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2014-07-11 17:17:30.286  INFO 59718 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [class org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2014-07-11 17:17:30.288  INFO 59718 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@2325f069' of type [class org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2014-07-11 17:17:30.319  INFO 59718 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'enableGlobalAuthenticationAutowiredConfigurer' of type [class org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration$EnableGlobalAuthenticationAutowiredConfigurer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2014-07-11 17:17:30.335  INFO 59718 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.security.SecurityAutoConfiguration' of type [class org.springframework.boot.autoconfigure.security.SecurityAutoConfiguration$$EnhancerBySpringCGLIB$$93ede0ab] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2014-07-11 17:17:30.406  INFO 59718 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'securityProperties' of type [class org.springframework.boot.autoconfigure.security.SecurityProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2014-07-11 17:17:30.445  INFO 59718 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'authenticationEventPublisher' of type [class org.springframework.security.authentication.DefaultAuthenticationEventPublisher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2014-07-11 17:17:30.447  INFO 59718 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.security.AuthenticationManagerConfiguration' of type [class org.springframework.boot.autoconfigure.security.AuthenticationManagerConfiguration$$EnhancerBySpringCGLIB$$e949cfe9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2014-07-11 17:17:30.457  INFO 59718 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration' of type [class org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration$$EnhancerBySpringCGLIB$$f7993b30] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2014-07-11 17:17:30.467  INFO 59718 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'messagePermissionEvaluator' of type [class sample.security.MessagePermissionEvaluator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2014-07-11 17:17:30.468  INFO 59718 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [class org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$8a8cf6ad] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2014-07-11 17:17:30.483  INFO 59718 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [class org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2014-07-11 17:17:30.487  INFO 59718 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'metaDataSourceAdvisor' of type [class org.springframework.security.access.intercept.aopalliance.MethodSecurityMetadataSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2014-07-11 17:17:31.387  INFO 59718 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2014-07-11 17:17:31.421  INFO 59718 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2014-07-11 17:17:31.524  INFO 59718 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate Core {4.3.5.Final}
+2014-07-11 17:17:31.525  INFO 59718 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2014-07-11 17:17:31.527  INFO 59718 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2014-07-11 17:17:31.732  INFO 59718 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2014-07-11 17:17:31.787  INFO 59718 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2014-07-11 17:17:31.920  INFO 59718 --- [    Test worker] o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
+2014-07-11 17:17:32.143  INFO 59718 --- [    Test worker] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2014-07-11 17:17:32.145 ERROR 59718 --- [    Test worker] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: alter table message drop constraint FK_81fumaqd8xdc5xwgxqukfymaw if exists
+2014-07-11 17:17:32.145 ERROR 59718 --- [    Test worker] org.hibernate.tool.hbm2ddl.SchemaExport  : Table &quot;MESSAGE&quot; not found; SQL statement:
+alter table message drop constraint FK_81fumaqd8xdc5xwgxqukfymaw if exists [42102-176]
+2014-07-11 17:17:32.154  INFO 59718 --- [    Test worker] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2014-07-11 17:17:32.752  INFO 59718 --- [    Test worker] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from URL [file:/Users/rwinch/code/spring-security-cjug/build/resources/main/data.sql]
+2014-07-11 17:17:32.757  INFO 59718 --- [    Test worker] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from URL [file:/Users/rwinch/code/spring-security-cjug/build/resources/main/data.sql] in 5 ms.
+2014-07-11 17:17:33.356  INFO 59718 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5a9ee01f, org.springframework.security.web.context.SecurityContextPersistenceFilter@7d6680d3, org.springframework.security.web.header.HeaderWriterFilter@10edf65c, org.springframework.security.web.csrf.CsrfFilter@4acf770c, org.springframework.security.web.authentication.logout.LogoutFilter@4fa978cf, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6186f691, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@378fc5db, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7d8dd7da, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@748c41b3, org.springframework.security.web.session.SessionManagementFilter@cf7d90b, org.springframework.security.web.access.ExceptionTranslationFilter@e575cf2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2b220c8a]
+2014-07-11 17:17:33.665  INFO 59718 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2014-07-11 17:17:33.720  INFO 59718 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}&quot; onto public java.lang.String sample.mvc.LoginController.login()
+2014-07-11 17:17:33.723  INFO 59718 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}&quot; onto public org.springframework.web.servlet.ModelAndView sample.mvc.MessageController.list()
+2014-07-11 17:17:33.723  INFO 59718 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[//{id}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}&quot; onto public java.lang.String sample.mvc.MessageController.delete(sample.data.Message,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2014-07-11 17:17:33.724  INFO 59718 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}&quot; onto public org.springframework.web.servlet.ModelAndView sample.mvc.MessageController.create(sample.mvc.MessageForm,org.springframework.validation.BindingResult,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2014-07-11 17:17:33.724  INFO 59718 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/],methods=[GET],params=[form],headers=[],consumes=[],produces=[],custom=[]}&quot; onto public java.lang.String sample.mvc.MessageController.createForm(sample.mvc.MessageForm)
+2014-07-11 17:17:33.724  INFO 59718 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[//{id}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}&quot; onto public org.springframework.web.servlet.ModelAndView sample.mvc.MessageController.view(java.lang.Long)
+2014-07-11 17:17:33.725  INFO 59718 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/signup],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}&quot; onto public java.lang.String sample.mvc.SignupController.signupForm(sample.data.User)
+2014-07-11 17:17:33.725  INFO 59718 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/signup],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}&quot; onto public java.lang.String sample.mvc.SignupController.signup(sample.data.User,org.springframework.validation.BindingResult,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2014-07-11 17:17:33.727  INFO 59718 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/error],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}&quot; onto public org.springframework.http.ResponseEntity&lt;java.util.Map&lt;java.lang.String, java.lang.Object&gt;&gt; org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2014-07-11 17:17:33.727  INFO 59718 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/error],methods=[],params=[],headers=[],consumes=[],produces=[text/html],custom=[]}&quot; onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest)
+2014-07-11 17:17:33.758  INFO 59718 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2014-07-11 17:17:33.759  INFO 59718 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2014-07-11 17:17:34.295  INFO 59718 --- [    Test worker] o.s.boot.SpringApplication               : Started application in 5.981 seconds (JVM running for 6.983)
+2014-07-11 17:17:34.342  INFO 59718 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring FrameworkServlet ''
+2014-07-11 17:17:34.342  INFO 59718 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2014-07-11 17:17:34.363  INFO 59718 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 21 ms
+2014-07-11 17:17:35.125  INFO 59718 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring FrameworkServlet ''
+2014-07-11 17:17:35.125  INFO 59718 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2014-07-11 17:17:35.129  INFO 59718 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 3 ms
+2014-07-11 17:17:35.155  INFO 59718 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring FrameworkServlet ''
+2014-07-11 17:17:35.190  INFO 59718 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2014-07-11 17:17:35.194  INFO 59718 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 4 ms
+2014-07-11 17:17:35.199  INFO 59718 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring FrameworkServlet ''
+2014-07-11 17:17:35.199  INFO 59718 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2014-07-11 17:17:35.202  INFO 59718 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 3 ms
+2014-07-11 17:17:35.206  INFO 59718 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring FrameworkServlet ''
+2014-07-11 17:17:35.206  INFO 59718 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2014-07-11 17:17:35.208  INFO 59718 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2 ms
+2014-07-11 17:17:35.216  INFO 59718 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring FrameworkServlet ''
+2014-07-11 17:17:35.217  INFO 59718 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2014-07-11 17:17:35.219  INFO 59718 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2 ms
+2014-07-11 17:17:35.249  INFO 59718 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring FrameworkServlet ''
+2014-07-11 17:17:35.250  INFO 59718 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2014-07-11 17:17:35.254  INFO 59718 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 3 ms
+2014-07-11 17:17:35.332  INFO 59718 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring FrameworkServlet ''
+2014-07-11 17:17:35.332  INFO 59718 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2014-07-11 17:17:35.335  INFO 59718 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 2 ms
+2014-07-11 17:17:35.351  INFO 59718 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring FrameworkServlet ''
+2014-07-11 17:17:35.351  INFO 59718 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2014-07-11 17:17:35.354  INFO 59718 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 3 ms
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>Generated by 
+<a href="http://www.gradle.org">Gradle 2.0</a> at Jul 11, 2014 5:17:35 PM</p>
+</div>
+</div>
+</body>
