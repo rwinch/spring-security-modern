@@ -26,7 +26,7 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration
 @ComponentScan
-@EnableAutoConfiguration//(exclude=SecurityAutoConfiguration.class)
+@EnableAutoConfiguration(exclude=SecurityAutoConfiguration.class)
 public class Application {
 
     public static void main(String[] args) {
