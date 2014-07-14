@@ -84,7 +84,7 @@
 <div class="nav-collapse collapse"
      th:with="currentUser=${#httpServletRequest.userPrincipal?.principal}">
   <div th:if="${currentUser != null}">
-      <form class="navbar-form pull-right" th:action="@{/j_acegi_logout}" method="post">
+      <form class="navbar-form pull-right" th:action="@{/logout}" method="post">
           <input type="submit" value="Log out" />
       </form>
       <p class="navbar-text pull-right" th:text="${currentUser.firstName}">

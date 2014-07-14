@@ -15,9 +15,9 @@
  */
 package sample.data;
 
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
-
-import java.util.Iterator;
+import org.springframework.security.access.prepost.PostAuthorize;
 
 /**
  * Manages {@link Message} instances
@@ -27,5 +27,10 @@ import java.util.Iterator;
  */
 public interface MessageRepository extends CrudRepository<Message, Long> {
 
-	Iterable<Message> findByToId(Long id);
+    @Query("select m from Message m where m.to.id = " +
+      "?#{principal.id}")
+    Iterable<Message> findAll();
+
+    @PostAuthorize("hasPermission(returnObject,'read')")
+    Message findOne(Long id);
 }

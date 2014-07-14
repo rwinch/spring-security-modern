@@ -25,10 +25,15 @@ import javax.persistence.Id;
 
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotEmpty;
+import org.springframework.security.crypto.password.PasswordEncoder;
 
 /**
  * Represents a user in our system.
  *
+ * <p>
+ * In a real system use {@link PasswordEncoder} to ensure the password is secured
+ * properly. This demonstration does not address this due to time restrictions.
+ * </p>
  *
  * @author Rob Winch
  */

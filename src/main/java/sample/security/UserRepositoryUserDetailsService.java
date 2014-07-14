@@ -17,12 +17,12 @@ package sample.security;
 
 import java.util.Collection;
 
-import org.acegisecurity.GrantedAuthority;
-import org.acegisecurity.GrantedAuthorityImpl;
-import org.acegisecurity.userdetails.UserDetails;
-import org.acegisecurity.userdetails.UserDetailsService;
-import org.acegisecurity.userdetails.UsernameNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.AuthorityUtils;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import sample.data.User;
 import sample.data.UserRepository;
 import org.springframework.stereotype.Service;
@@ -31,7 +31,7 @@ import org.springframework.stereotype.Service;
  * @author Rob Winch
  *
  */
-@Service("userDetailsService")
+@Service
 public class UserRepositoryUserDetailsService implements UserDetailsService {
     private final UserRepository userRepository;
 
@@ -40,6 +40,9 @@ public class UserRepositoryUserDetailsService implements UserDetailsService {
         this.userRepository = userRepository;
     }
 
+    /* (non-Javadoc)
+     * @see org.springframework.security.core.userdetails.UserDetailsService#loadUserByUsername(java.lang.String)
+     */
     @Override
     public UserDetails loadUserByUsername(String username)
             throws UsernameNotFoundException {
@@ -57,8 +60,8 @@ public class UserRepositoryUserDetailsService implements UserDetailsService {
         }
 
         @Override
-        public GrantedAuthority[] getAuthorities() {
-            return new GrantedAuthority[] { new GrantedAuthorityImpl("ROLE_USER") };
+        public Collection<? extends GrantedAuthority> getAuthorities() {
+            return AuthorityUtils.createAuthorityList("ROLE_USER");
         }
 
         @Override

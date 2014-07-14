@@ -17,7 +17,6 @@ package sample.mvc;
 
 import javax.validation.Valid;
 
-import org.acegisecurity.Authentication;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
@@ -52,9 +51,8 @@ public class MessageController {
     }
 
     @RequestMapping(method=RequestMethod.GET)
-    public ModelAndView list(Authentication authentication) {
-		User user = (User) authentication.getPrincipal();
-        Iterable<Message> messages = messageRepository.findByToId(user.getId());
+    public ModelAndView list() {
+        Iterable<Message> messages = messageRepository.findAll();
         return new ModelAndView("messages/inbox", "messages", messages);
     }
 
